@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>تمرين حول اصلاح الاخطاء</title>
+</head>
+
+<body>
+    <div class="book-page">
+        <h1 class="book-title">تمرين حول اصلاح الاخطاء</h1>
+        <div class="content">
+            <p>
+                التعليمات:
+            </p>
+            <p>
+                اليك بعض الاسطر البرمجية وهناك اخطاء في كل سطر. حاول اصلاح جميع الاخطاء
+                حتى يشتغل البرنامج بدون اخطاء ونتيجة البرنامج عليها ان تطابق النتيجة
+                في الاسفل
+            </p>
+            <pre><code>
+Day 1 - String Manipulation 
+String Concatination is done with the "+" sign. 
+e.g. print("Hello " + "World")
+New lines can be created with a backslash and n.
+            </code></pre>
+            <p>
+                هذا هو الكود الذي عليك اصلاحه.
+            </p>
+            <pre><code>
+print(Day 1 - String Manipulation")
+print("String Concatination is done with the "+" sign.")
+    print('e.g. print("Hello " + "World")')
+print(("New lines can be created with a backslash and n.")
+            </code></pre>
+            <p>
+                في السطر الاول نسينا
+                "
+                في بداية ال
+                string
+            </p>
+            <pre><code>
+print("Day 1 - String Manipulation")
+            </code></pre>
+            <p>
+                في السطر الثالث هناك فراغ في بداية السطر
+            </p>
+            <pre><code>
+print('e.g. print("Hello " + "World")')
+            </code></pre>
+            <p>
+                في السطر الرابع هناك قوس زائد في عبارة الطباعة
+            </p>
+            <pre><code>
+print("New lines can be created with a backslash and n.")
+            </code></pre>
+            <p>
+                اما في السطر الثاني فيبدو انه لايوجد اخطاء ولكن هذه هي
+                نتيجته
+            </p>
+            <pre><code>
+String Concatination is done with the  sign. 
+            </code></pre>
+            <p>
+                ونحن نريد هذه النتيجة:
+            </p>
+            <pre><code>
+String Concatination is done with the + sign. 
+                            </code></pre>
+            <p>
+                والسبب هو انه يعتقد انك تريد الصاق
+                الجملة الاولى مع الثانية بعلامة الزائد تلك
+                ولكن نحن نريد اظهار علامة الزائد في الشاشة لذلك نستبدل 
+                علامات 
+                ""
+                الخارجية ب
+                ' '
+                وهذا سوف يحل المشكل
+            </p>
+            <pre><code>
+print("Day 1 - String Manipulation")
+print('String Concatination is done with the "+" sign.')
+print('e.g. print("Hello " + "World")')
+print("New lines can be created with a backslash and n.")
+            </code></pre>
+        </div>
+    </div>
+</body>
+
+</html>
