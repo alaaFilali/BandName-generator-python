@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>تمرين حول المتغيرات</title>
+</head>
+
+<body>
+    <div class="book-page">
+        <h1 class="book-title">تمرين حول المتغيرات</h1>
+        <div class="content">
+            <p>
+                التعليمات: 
+            </p>
+            <p>
+                اكتب برنامج يقوم بقلب قيمة متغيرين 
+                a
+                و 
+                b
+                يدخلهما المستخدم
+                والنتيجة النهائية للبرنامج سوف تكون هكذا: 
+            </p>
+            <pre><code>
+a: 15
+b: 3
+a: 3
+b: 15
+            </code></pre>
+            <p>
+                ويجب على البرنامج الخاص بك ان يعمل مع مختلف الاعداد المدخلة 
+                اي ان طباعة العددين ثم طباتهما مرة اخرى بالعكس لن يعتبر حل صحيح
+            </p>
+            <p>
+                سوف تسأل المستخدم ان يدخل عددين 
+                a 
+                و 
+                b 
+                هكذا: 
+            </p>
+            <pre><code>
+a = input("a: ")
+b = input("b: ")
+            </code></pre>
+            <p>
+                ثم في الاخير سوف تقوم بطباعتهما هكذا: 
+            </p>
+            <pre><code>
+print("a = " + a)
+print("b = " + b)
+            </code></pre>
+            <p>
+                ومهمتك هي كتابة كود يقلب قيمة المتغيرن 
+                a 
+                و 
+                b 
+            </p>
+            <p>
+                اما هذا الحل فلن يقبل:  
+            </p>
+            <pre><code>
+print("a = " + b)
+print("b = " + a)
+            </code></pre>
+            <p>
+                الحل:
+                <br>
+                 فلو كان لديك كأس قهوة وكأس حليب كيف سوف تقوم بقلب محتواهما؟ 
+                ببساطة سوف تستعمل كأسا ثالث وهذا ما سوف نستعمله في حل التمرين الخاص بنا 
+                هو استعمال متغير ثالث 
+            </p>
+            <pre><code>
+t = a 
+a = b 
+b = t
+            </code></pre>
+            <p>
+                اما هذا الحل فهو خاطئ لانك وضعت قيمة 
+                a 
+                في 
+                b 
+                ثم وضعت قيمة 
+                b 
+                التي هي 
+                a 
+                في 
+                a 
+            </p>
+            <pre><code>
+b = a
+a = b 
+            </code></pre>
+            <p>
+                الحل الصحيح كان استعمال متغير ثالث
+            </p>
+            <pre><code>
+a = input("a: ")
+b = input("b: ")
+
+t = a 
+a = b 
+b = t
+
+print("a = " + a)
+print("b = " + b)
+            </code></pre>
+        </div>
+    </div>
+</body>
+
+</html>
