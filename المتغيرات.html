@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>المتغيرات</title>
+</head>
+
+<body>
+    <div class="book-page">
+        <h1 class="book-title">المتغيرات</h1>
+        <div class="content">
+            <p>
+                عندما نسأل المستخدم عن اسمه عن طريق الدالة 
+                input 
+                ما يدخله المستخدم سوف يعوض الدالة وفي السابق كنا 
+                نقوم بطباعته او تمريره في دالة اخرى ولكننا نريد ان 
+                نستعمل تلك القيمة او تلك المعلومة التي ادخلها في اماكن 
+                ومواضع اخرى في الكود الخاص بنا والمتغيرات هي التي سوف تتيح لنا ذلك
+            </p>
+            <p>
+                فلو اعطي لما سوف يدخله المستخدم اسما اذن في تلك الحالة سوف استطيع 
+                ان اشير اليه بذلك الاسم فيما بعد
+            </p>
+            <pre><code>
+name = input("What's your name?: ")
+            </code></pre>
+            <p>
+                وما يحدث هنا انني قلت له ضع ما في اليمين داخل المتغير 
+                name 
+                وعندما اشغل البرنامج سوف يسألني ان ادخل اسم ثم سوف ينتهي البرنامج 
+                ولكن في هذه الحالة ماادخله المستخدم محفوض داخل المتغير 
+                name 
+                حتى ينتهي البرنامج
+                ويمكنني طباعته بالاشارة الى اسمه فقط
+            </p>
+            <pre><code>
+name = input("What's your name?: ")
+print(name)
+            </code></pre>
+            <pre><code>
+What's your name?: Alaa
+Alaa
+            </code></pre>
+            <p>
+                سميت المتغيرات متغيرات لانها تتغير مثلا لنفرض ان قيمة المتغير 
+                name 
+                هي 
+                Alaa 
+                ثم قمت بطباعته ثم قمت بتغيير قيمته مرة اخرى في الكود الخاص بي 
+                ثم قم بطباعته مرة اخرى وهذا ممكن تماما
+            </p>
+            <pre><code>
+name = "Alaa"
+print(name)
+
+name = "Amine"
+print(name)
+            </code></pre>
+            <pre><code>
+Alaa 
+Amine
+            </code></pre>
+            <p>
+                هذا هو حل التمرين السابق: 
+            </p>
+            <pre><code>
+print( len( input("What's your name?: ") ) )
+            </code></pre>
+            <p>
+                وسوف نقوم بتبسيطه من خلال استعمال المتغيرات
+            </p>
+            <pre><code>
+name = input("What's your name?: ")
+length = len(name)
+print(length)
+            </code></pre>
+            <pre><code>
+What's your name?: Alaa 
+6
+            </code></pre>
+            <p>
+                بحيث وضعت ماسوف يدخله المستخدم في متغير سميته 
+                name 
+                ثم مررته داخل الدالة 
+                len 
+                وخزنت القيمة في متغير جديد سميته 
+                length 
+                وفي الاخير مررت هذا المتغير 
+                length 
+                داخل دالة الطباعة 
+                print 
+                وسوف يعمل كما في السابق الا انه اسهل للقراءة والفهم الان مقارنة بالسابق
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
