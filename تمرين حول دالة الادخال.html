@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>تمرين حول دالة الادخال</title>
+</head>
+
+<body>
+    <div class="book-page">
+        <h1 class="book-title">تمرين حول دالة الادخال</h1>
+        <div class="content">
+            <p>
+                التعليمات: 
+            </p>
+            <p>
+                اكتب برنامج يقوم بطباعة عدد الحروف في اسم المستخدم الذي سوف يدخله.
+                وسوف تحتاج ان تقوم ببحث صغير حول دالة تقوم بحساب عدد الحروف 
+                في اي 
+                string 
+                تقوم بوضعه داخل اقواسها
+            </p>
+            <p>
+                ملاحظة: يجب على البرنامج الخاص بك ان يعمل مع اي اسم 
+                يدخله المستخدم مثلا طول الاسم 
+                Alaa 
+                هو 
+                4
+                اما طول الاسم 
+                Amine
+                هو 
+                5 
+            </p>
+            <p>
+                والنتيجة النهائية للبرنامج سوف تكون هكذا: 
+            </p>
+            <pre><code>
+What's your name?: Alaa 
+4
+            </code></pre>
+            <p>
+                الحل: اولا علي ان استقبل اسم المستخدم الذي سوف يأتي عبر دالة الادخال
+            </p>
+            <pre><code>
+input("What's your name?: ")
+            </code></pre>
+            <p>
+                والان ما سوف يدخله المستخدم سوف يعوض الدالة اذن سوف اعاملها 
+                على انها الاسم الذي اريده والان اريد ان احسب طوله 
+                ومن خلال وضع هذه الجملة في مستطيل بحث قوقل وجدت الاجابة: 
+                how to get the length of a string in python stackoverflow
+                وفي نتيجة البحث الاولى وجدت شخص يتحدث عن دالة تسمى 
+                len
+                ومن خلال تجربتها 
+            </p>
+            <pre><code>
+print(len("Alaa"))
+            </code></pre>
+            <pre><code>
+4
+            </code></pre>
+            <p>
+                اذن فالدالة 
+                len 
+                هي ضالتنا اذن في مكان ان اضع انا الاسم سوف اطلب من المستخدم ان يدخله 
+                هكذا: 
+            </p>
+            <pre><code>
+print( len( input("What's your name?: ") ) )
+            </code></pre>
+            <p>
+                وهكذا لدي ثلاث دوال داخل بعضها الاولى تأخد مدخل المستخدم والثانية 
+                تحسب عدد حروفه والاخيرة تقوم بطباعة بعدد الحروف
+            </p>
+            <p>
+                مثلا لو كان مدخل المستخدم الاسم 
+                Aboubakr
+                اول شيء سوف يعوض دالة الادخال
+            </p>
+            <pre><code>
+print(len("Aboubakr"))
+            </code></pre>
+            <p>
+                ثم 
+                طول الاسم 
+                Aboubakr 
+                هو 
+                8
+                سوف يعوض الدالة 
+                len
+                هكذا: 
+            </p>
+            <pre><code>
+print(8)
+            </code></pre>
+            <p>
+                ثم يتم طباعة النتيجة في النهاية: 
+            </p>
+            <pre><code>
+8
+            </code></pre>
+        </div>
+    </div>
+</body>
+
+</html>
