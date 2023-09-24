@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>تسمية المتغيرات</title>
+</head>
+
+<body>
+    <div class="book-page">
+        <h1 class="book-title">تسمية المتغيرات</h1>
+        <div class="content">
+            <p>
+                 عندما تريد تسمية المتغيرات الخاصة بك يمكنك تسميتها كيفما تريد 
+            </p>
+            <p>
+                مثلا في مكان ان اسمي المتغير 
+                name 
+            </p>
+            <pre><code>
+name = input("What's your name?: ")
+print(name)
+            </code></pre>
+            <p>
+                يمكنني تسميته 
+                n 
+                مثلا 
+                ولكن بشرط ان تشير اليه باسمه هكذا: 
+            </p>
+            <pre><code>
+n = input("What's your name?: ")
+print(n)
+            </code></pre>
+            <p>
+                وما اقصده بان تشير اليه باسمه هو مثلا سميته 
+                n 
+                وعندما تريد طباعته او استعماله في مكان اخر 
+                اشر اليه ب 
+                n 
+                وليس 
+                name
+                او اي شيء اخر عدا 
+                n
+            </p>
+            <p>
+                هذا مثال خاطئ: 
+            </p>
+            <pre><code>
+n = input("What's your name?: ")
+print(name)
+            </code></pre>
+            <p>
+                هناك قواعد لتسمية المتغيرات الخاصة بك واولها ان تجعل الكود 
+                الخاص بك قابل للقراءة فلو سميت متغير يحمل اسم مثلا ب 
+                n 
+                فهذا الاسم لا يدل على محتوى المتغير على عكس 
+                name 
+                التي تدل على ان هذا المتغير يحمل قيمة اسم
+            </p>
+            <pre><code>
+name = "Alaa"
+            </code></pre>
+            <p>
+                القاعدة الثانية هي اذا اردت ان تسمي المتغير الخاص بك اسم يتكون من كلمتين او اكثر
+                مثلا 
+                user name 
+                يمكنك ان تفصل بينهما ب 
+                _
+                ولا يمكنك استعمال الفراغات
+            </p>
+            <pre><code>
+user_name = "Alaa" ✅
+user name = "Amine" ❌
+            </code></pre>
+            <p>
+                يمكنك استعمال الارقام في تسمية المتغيرات الخاصة بك ولكن ليس في بداية الاسم 
+            </p>
+            <pre><code>
+name3 = "Salim" ✅
+2name = "Ibrahim" ❌
+            </code></pre>
+            <p>
+                ايضا حاول تجنب تسمية المتغيرات باسماء مثل اسماء الدوال ك 
+                print 
+                او 
+                input 
+                حتى وان امكنك فعل ذلك ولكن حاول تجنب فعل ذلك
+            </p>
+            <pre><code>
+input = input("What's your name?: ") ❌
+            </code></pre>
+            <p>
+                واخيرا لو سميت المتغير الخاص بك 
+                name 
+                ثم اردت طباعته ولكن كتبت اسمه خطأ مثلا 
+                nama 
+                بدلت الحرف الاخير 
+                هنا سوف تحصل على 
+                error 
+                من نوع 
+                NameError
+            </p>
+            <pre><code>
+name = "Mostafa"
+print(nama)
+            </code></pre>
+            <p>
+                ليس لانك قمت بكتابة الكلمة 
+                name 
+                خاطئة في قواعد اللغة الانجليزية ف 
+                python 
+                لايهمه لو سميت المتغير الخاص بك 
+                nama 
+                ثم قم بطباعته فهذا كود صحيح
+            </p>
+            <pre><code>
+nama = "Mostafa"
+print(nama) 
+            </code></pre>
+        </div>
+    </div>
+</body>
+
+</html>
