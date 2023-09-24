@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>برنامج مولد اسماء الفرق الموسيقية</title>
+</head>
+
+<body>
+    <div class="book-page">
+        <h1 class="book-title">برنامج مولد اسماء الفرق الموسيقية</h1>
+        <div class="content">
+            <p>
+                هذه هي نتيجة البرنامج الذي سوف نقوم ببناءه وهو عبارة عن مولد 
+                اسماء لفرق موسيقية بحيث سوف يرحب بك ثم يسألك عن المدينة التي كبرت فيها
+                ثم يسألك عن اسم حيوانك الاليف ثم يقوم بجمعهما في اسم واحد والذي 
+                سوف يكون اسم فرقتك الموسيقية
+            </p>
+            <pre><code>
+Welcome to the Band Name Generator.
+What's name of the city you grew up in?
+Harchoun
+What's your pet's name?
+Cat
+Your band name could be Harchoun Cat
+            </code></pre>
+            <p>
+                ادخلت اسم المدينة التي كبرت فيها واسمها 
+                Harchoun 
+                واسم حيواني الاليف وهو 
+                Cat 
+                فاسم فرقتي الموسيقية يمكن ان يكون 
+                Harchoun Cat
+            </p>
+            <p>
+                لاحظ ايضا انني قمت بادخالها في سطر جديد وليس في نفس السطر مع السؤال. 
+                ولكي تكمل هذا البرنامج سوف تستعمل كل ماتعلمته من طباعة 
+                واخد مدخلات من المستخدم والصاق الجمل النصية مع بعض والمتغيرات 
+            </p>
+            <p>
+                حاول في البرنامج ثم عد لترى الحل الخاص بي.
+            </p>
+            <p>
+                اولا سوف ارحب بالمستخدم من خلال طباعة رسالة في الشاشة
+            </p>
+            <pre><code>
+print("Welcome to the Band Name Generator.")
+            </code></pre>
+            <p>
+                ثم سوف اساله عن اسم المدينة التي كبر فيها عن طريق دالة الادخال 
+                input
+                ثم ساخزنها في متغير اسميه 
+                city 
+                ليبين ان قيمته هي اسم مدينة
+            </p>
+            <pre><code>
+city = input("What's name of the city you grew up in?")
+            </code></pre>
+            <p>
+                ثم سوف اسأله عن اسم حيوانه الاليف واخزنه في متغير 
+                pet
+            </p>
+            <pre><code>
+pet = input("What's your pet's name?")
+            </code></pre>
+            <p>
+                ثم سوف اقوم بلصق اسم الحيوان الاليف في نهاية اسم المدينة 
+                وايضا اخزنها في متغير 
+                band_name
+            </p>
+            <pre><code>
+band_name = city + " " + pet
+            </code></pre>
+            <p>
+                وفي الاخير اقوم بطباعة الاسم الجديد مع جملة 
+                اسم فرقتك الموسيقية يمكن ان يكون
+            </p>
+            <pre><code>
+print("Your band name could be " + band_name)
+            </code></pre>
+            <p>
+                هذه نتيجة الكود: 
+            </p>
+            <pre><code>
+Welcome to the Band Name Generator.
+What's name of the city you grew up in?Harchoun
+What's your pet's name?Cat
+Your band name could be Harchoun Cat
+            </code></pre>
+            <p>
+                ولكن لاحظ ان اسم المدينة والحيوان الاليف ليسا في سطر لوحدها ولنصلح 
+                ذلك نستعمل الرمز 
+                \n 
+                الذي يعني سطر جديد في الجملة الخاصة بنا داخل امر دالة الادخال
+                وهذا هو الكود كامل للبرنامج:
+            </p>
+            <pre><code>
+print("Welcome to the Band Name Generator.")
+city = input("What's name of the city you grew up in?\n")
+pet = input("What's your pet's name?\n")
+band_name = city + " " + pet
+print("Your band name could be " + band_name)
+            </code></pre>
+        </div>
+    </div>
+</body>
+
+</html>
